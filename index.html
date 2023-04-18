@@ -22,7 +22,8 @@
             extend: {
               colors: {
                 white: '#ffffff',
-                black: '#000000'
+                black: '#000000',
+                grey: '#f9f9f9'
               },
               fontFamily: {
                 grotesk: ['Schibsted Grotesk', 'sans-serif'],
@@ -35,16 +36,627 @@
     <!-- Custom CSS -->
     <style type="text/tailwindcss">
         @layer utilities {
-          
+          .active {
+            opacity: 1;
+            z-index: 100;
+            pointer-events: none;
+          }
+          .name-active {
+            z-index: 101;
+          }
+
+          .contact__link:hover .right__arrow {
+            margin-left: 5rem;
+          }
         }
     </style>
 </head>
-<body>
+<body class="w-screen min-h-screen overflow-x-hidden box-border relative">
 
-    
+    <main class="w-screen min-h-screen bg-grey relative">
+        
+      <nav class="absolute w-full top-0 left-0 bg-grey flex items-center justify-between py-4 px-16">
+          <a href="#"><img src="./images/logo/loop-logo.png" alt="" class="w-8 h-8"></a>
+          <ul class="flex items-center">
+              <li class="my-0 mx-6"><a href="#" class="uppercase font-semibold font-grotesk text-black text-xs tracking-[3px]">about</a></li>
+              <li class="my-0 mx-6"><a href="#" class="uppercase font-semibold font-grotesk text-gray-400 hover:text-black transition text-xs tracking-[3px]">services</a></li>
+              <li class="my-0 mx-6"><a href="#" class="uppercase font-semibold font-grotesk text-gray-400 hover:text-black transition text-xs tracking-[3px]">work</a></li>
+              <li class="my-0 mx-6"><a href="#" class="uppercase font-semibold font-grotesk text-gray-400 hover:text-black transition text-xs tracking-[3px]">loop.labs</a></li>
+              <li class="my-0 mx-6"><a href="#" class="uppercase font-semibold font-grotesk text-gray-400 hover:text-black transition text-xs tracking-[3px] flex items-center">careers <span class="ml-4 rounded-2xl py-[.15rem] px-[.35rem] bg-black text-white text-[.6rem]">17</span></a></li>
+              <li class="my-0 mx-6"><a href="#" class="uppercase font-semibold font-grotesk text-gray-400 hover:text-black transition text-xs tracking-[3px]">contact</a></li>
+              <li class="my-0 ml-36"><a href="#" class="uppercase font-semibold font-grotesk text-gray-400 hover:text-black transition text-xs tracking-[3px]">loop.offices</a></li>
+          </ul>
+      </nav>
+
+      <section class="pt-32 w-[47%] pl-8">
+          <h1 class="uppercase font-grotesk font-light text-[.9rem] text-black mb-2">meet our amazing talents</h1>
+          <p class="text-6xl font-normal font-grotesk leading-[1.2]">410 talents, 42 nations and 24 languages under one roof.</p>
+      </section>
+
+      <div class="mt-24 w-full flex flex-wrap relative pb-32 pl-8">
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50">Adalberte Agleraaaaa,</p>
+            <div class="opacity-0 duration-150 js-imgContainer fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/8.jpg" alt="Portrait of Adalbert Agler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50"> Alwine Dollfuß,</p>
+            <div class="opacity-0 duration-150 js-imgContainer fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/1.jpg" alt="Portrait of  Alwine Dollfuß" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Abraham Berghofer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/9.jpg" alt="Portrait of Abraham Berghofer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Angelika Amon,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/2.jpg" alt="Portrait of Angelika Amon" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Achaz Fetzer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/10.jpg" alt="Portrait of Achaz Fetzer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Anna Andexer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/3.jpg" alt="Portrait of  Anna Andexer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Blumauer Faber,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/1.jpg" alt="Portrait of Blumauer Faber" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Elisa Andessner,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/4.jpg" alt="Portrait of  Elisa Andessner" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Demuth de Hantesberg,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/2.jpg" alt="Portrait of Demuth de Hantesberg" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Eva K. Anderson,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/5.jpg" alt="Portrait of  Eva K. Anderson" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Gärtner Görtz,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/3.jpg" alt="Portrait of Gärtner Görtz" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Maria Andergast,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/6.jpg" alt="Portrait of   Maria Andergast" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Jakobi Kessler,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/4.jpg" alt="Portrait of Jakobi Kessler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">   Natalie Beer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/7.jpg" alt="Portrait of atalie Beer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Landsburg Peyer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/5.jpg" alt="Portraitof Landsburg Peyer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Olga Bauer-Pilecka,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/8.jpg" alt="Portrait of Olga Bauer-Pilecka" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Pöck Querfurth,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/6.jpg" alt="Portrait of Pöck Querfurth" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Susanne Baumhakel,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/9.jpg" alt="Portrait of Susanne Baumhakel" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Weidner (de Billerburg),</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/7.jpg" alt="Portrait of Weidner (de Billerburg)" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Vera Balser-Eberle,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/10.jpg" alt="Portrait of  Vera Balser-Eberle" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50">Adalberte Agleraaaaa,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/8.jpg" alt="Portrait of Adalbert Agler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+           <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50"> Alwine Dollfuß,</p>
+            <div class="opacity-0 duration-150 js-imgContainer   fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/1.jpg" alt="Portrait of  Alwine Dollfuß" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Abraham Berghofer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/9.jpg" alt="Portrait of Abraham Berghofer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Angelika Amon,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/2.jpg" alt="Portrait of Angelika Amon" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Achaz Fetzer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/10.jpg" alt="Portrait of Achaz Fetzer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Anna Andexer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/3.jpg" alt="Portrait of  Anna Andexer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Blumauer Faber,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/1.jpg" alt="Portrait of Blumauer Faber" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Elisa Andessner,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/4.jpg" alt="Portrait of  Elisa Andessner" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Demuth de Hantesberg,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/2.jpg" alt="Portrait of Demuth de Hantesberg" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Eva K. Anderson,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/5.jpg" alt="Portrait of  Eva K. Anderson" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Gärtner Görtz,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/3.jpg" alt="Portrait of Gärtner Görtz" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Maria Andergast,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/6.jpg" alt="Portrait of   Maria Andergast" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Jakobi Kessler,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/4.jpg" alt="Portrait of Jakobi Kessler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">   Natalie Beer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/7.jpg" alt="Portrait of atalie Beer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Landsburg Peyer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/5.jpg" alt="Portraitof Landsburg Peyer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Olga Bauer-Pilecka,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/8.jpg" alt="Portrait of Olga Bauer-Pilecka" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Pöck Querfurth,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/6.jpg" alt="Portrait of Pöck Querfurth" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Susanne Baumhakel,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/9.jpg" alt="Portrait of Susanne Baumhakel" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Weidner (de Billerburg),</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/7.jpg" alt="Portrait of Weidner (de Billerburg)" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Vera Balser-Eberle,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/10.jpg" alt="Portrait of  Vera Balser-Eberle" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50">Adalberte Agleraaaaa,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/8.jpg" alt="Portrait of Adalbert Agler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+           <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50"> Alwine Dollfuß,</p>
+            <div class="opacity-0 duration-150 js-imgContainer   fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/1.jpg" alt="Portrait of  Alwine Dollfuß" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Abraham Berghofer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/9.jpg" alt="Portrait of Abraham Berghofer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Angelika Amon,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/2.jpg" alt="Portrait of Angelika Amon" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Achaz Fetzer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/10.jpg" alt="Portrait of Achaz Fetzer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Anna Andexer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/3.jpg" alt="Portrait of  Anna Andexer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Blumauer Faber,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/1.jpg" alt="Portrait of Blumauer Faber" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Elisa Andessner,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/4.jpg" alt="Portrait of  Elisa Andessner" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Demuth de Hantesberg,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/2.jpg" alt="Portrait of Demuth de Hantesberg" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Eva K. Anderson,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/5.jpg" alt="Portrait of  Eva K. Anderson" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Gärtner Görtz,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/3.jpg" alt="Portrait of Gärtner Görtz" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Maria Andergast,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/6.jpg" alt="Portrait of   Maria Andergast" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Jakobi Kessler,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/4.jpg" alt="Portrait of Jakobi Kessler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">   Natalie Beer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/7.jpg" alt="Portrait of atalie Beer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Landsburg Peyer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/5.jpg" alt="Portraitof Landsburg Peyer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Olga Bauer-Pilecka,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/8.jpg" alt="Portrait of Olga Bauer-Pilecka" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Pöck Querfurth,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/6.jpg" alt="Portrait of Pöck Querfurth" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Susanne Baumhakel,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/9.jpg" alt="Portrait of Susanne Baumhakel" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Weidner (de Billerburg),</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/7.jpg" alt="Portrait of Weidner (de Billerburg)" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Vera Balser-Eberle,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/10.jpg" alt="Portrait of  Vera Balser-Eberle" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50">Adalberte Agleraaaaa,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/8.jpg" alt="Portrait of Adalbert Agler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+           <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white font-normal text-5xl relative mix-blend-difference z-50"> Alwine Dollfuß,</p>
+            <div class="opacity-0 duration-150 js-imgContainer   fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/1.jpg" alt="Portrait of  Alwine Dollfuß" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Abraham Berghofer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/9.jpg" alt="Portrait of Abraham Berghofer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Angelika Amon,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/2.jpg" alt="Portrait of Angelika Amon" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Achaz Fetzer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/10.jpg" alt="Portrait of Achaz Fetzer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Anna Andexer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/3.jpg" alt="Portrait of  Anna Andexer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Blumauer Faber,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/1.jpg" alt="Portrait of Blumauer Faber" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Elisa Andessner,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/4.jpg" alt="Portrait of  Elisa Andessner" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Demuth de Hantesberg,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/2.jpg" alt="Portrait of Demuth de Hantesberg" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Eva K. Anderson,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/5.jpg" alt="Portrait of  Eva K. Anderson" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Gärtner Görtz,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/3.jpg" alt="Portrait of Gärtner Görtz" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">  Maria Andergast,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/6.jpg" alt="Portrait of   Maria Andergast" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Jakobi Kessler,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/4.jpg" alt="Portrait of Jakobi Kessler" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">   Natalie Beer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/7.jpg" alt="Portrait of atalie Beer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Landsburg Peyer,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/5.jpg" alt="Portraitof Landsburg Peyer" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Olga Bauer-Pilecka,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/8.jpg" alt="Portrait of Olga Bauer-Pilecka" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Pöck Querfurth,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/6.jpg" alt="Portrait of Pöck Querfurth" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Susanne Baumhakel,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/9.jpg" alt="Portrait of Susanne Baumhakel" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl">Weidner (de Billerburg),</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/male-employees/7.jpg" alt="Portrait of Weidner (de Billerburg)" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+
+          <div class="relative mr-5 mb-2">
+            <p class="js-name cursor-pointer font-grotesk text-white relative mix-blend-difference z-50 font-normal text-5xl"> Vera Balser-Eberle,</p>
+            <div class="opacity-0 duration-150 js-imgContainer  fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-150 w-[16rem] h-[20rem] overflow-hidden">
+              <img src="./images/female-employees/10.jpg" alt="Portrait of  Vera Balser-Eberle" class="absolute top-0 left-0 object-cover">
+            </div>
+          </div>
+      </div>
+
+      <div class="w-full bg-white flex items-center">
+        <div class="basis-1/2 border-r border-r-gray-300">
+          <a href="#" class="contact__link flex items-center justify-center flex-col py-32">
+            <h2 class="uppercase text-gray-500 font-grotesk mb-6 text-[.9rem]">get in touch</h2>
+            <p class="flex items-center font-grotesk text-xl font-medium">Contact us for potential projects <img src="./images/logo/right-arrow.png" alt="arrow pointing right" class="right__arrow transition-all w-8 h-8 ml-8"></p>
+          </a>
+        </div>
+
+        <div class="basis-1/2">
+          <a href="#" class="contact__link flex items-center justify-center flex-col py-32">
+            <h2 class="uppercase text-gray-500 font-grotesk mb-6 text-[.9rem]">want to work at loop?</h2>
+            <p class="flex items-center font-grotesk text-xl font-medium">We currently have 17 open positions <img src="./images/logo/right-arrow.png" alt="arrow pointing right" class="right__arrow transition-all w-8 h-8 ml-8"></p>
+          </a>
+        </div>
+      </div>
+
+    </main>
     
 
     <!-- Link to js file -->
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
