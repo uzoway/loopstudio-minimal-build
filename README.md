@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/73430874/232936341-0809228c-53af-4657-adb8-e6da64d2abfb.mp4
+
 # Loop studio about page rebuild
 
 Loop studio is one agency I really admire because of the incredible range of awesome projects in their portfolio. So I decided to make a minimal rebuild of the about page of the wesbite you can find here👉 [Loop studio about page](https://www.agentur-loop.com/about). My focus was on the interaction you see when you hover on any employee name. 
