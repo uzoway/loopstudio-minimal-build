@@ -16,7 +16,7 @@ Loop studio is one agency I really admire because of the incredible range of awe
 
 ### Video Preview
 
-![](./Loop%20_%20Meet%20our%20team%20-%20Google%20Chrome%202023-04-19%2000-49-29.mp4)
+![](./Loop _ Meet our team - Google Chrome 2023-04-19 00-49-29.mp4)
 
 ## My process
 
