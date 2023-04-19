@@ -5,7 +5,6 @@ Loop studio is one agency I really admire because of the incredible range of awe
 ## Table of contents
 
 - [Overview](#overview)
-  - [Video Preview](#video-preview)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -13,10 +12,6 @@ Loop studio is one agency I really admire because of the incredible range of awe
 - [Acknowledgments](#acknowledgments)
 
 ## Overview
-
-### Video Preview
-
-![](./Loop _ Meet our team - Google Chrome 2023-04-19 00-49-29.mp4)
 
 ## My process
 
